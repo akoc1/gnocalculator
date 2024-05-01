@@ -25,7 +25,7 @@
 
                 return _gno;
             }
-            set
+            private set
             {
                 _gno = value;
             }
