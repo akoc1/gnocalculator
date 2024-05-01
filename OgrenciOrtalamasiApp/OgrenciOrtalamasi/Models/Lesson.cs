@@ -22,7 +22,7 @@
 
                 return _avg;
             }
-            set
+            private set
             {
                 _avg = value;
             }
