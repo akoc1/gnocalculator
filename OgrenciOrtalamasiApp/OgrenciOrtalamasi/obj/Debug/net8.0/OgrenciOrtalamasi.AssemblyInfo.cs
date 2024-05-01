@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OgrenciOrtalamasi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84c6bd83c0bcdf8bc553f81b3dc951ae8d6749df")]
 [assembly: System.Reflection.AssemblyProductAttribute("OgrenciOrtalamasi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OgrenciOrtalamasi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

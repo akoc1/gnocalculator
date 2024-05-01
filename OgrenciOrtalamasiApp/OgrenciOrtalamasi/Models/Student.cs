@@ -2,8 +2,21 @@
 {
     public class Student
     {
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        private string _fullName;
+
+        public string FullName
+        {
+            get
+            {
+                _fullName = $"{FirstName} {LastName}";
+
+                return _fullName;
+            }
+            private set { _fullName = value; }
+        }
+
         public List<Lesson> Lessons { get; set; } = new List<Lesson>();
 
         private double _gno { get; set; }

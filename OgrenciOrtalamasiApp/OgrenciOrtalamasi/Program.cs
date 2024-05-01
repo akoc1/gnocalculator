@@ -43,11 +43,11 @@ namespace OgrenciOrtalamasi
                         AKTSCredit = lesson.AKTSCredit,
                     };
 
-                    studentLesson.VisaScore = GetScoreFromUser($"{student.FirstName} adlı öğrencinin {lesson.Name} dersinin vize notu: ");
-                    studentLesson.FinalScore = GetScoreFromUser($"{student.FirstName} adlı öğrencinin {lesson.Name} dersinin final notu: ");
+                    studentLesson.VisaScore = GetScoreFromUser($"{student.FullName} adlı öğrencinin {lesson.Name} dersinin vize notu: ");
+                    studentLesson.FinalScore = GetScoreFromUser($"{student.FullName} adlı öğrencinin {lesson.Name} dersinin final notu: ");
 
                     if (studentLesson.Average < 40)
-                        studentLesson.MakeUpScore = GetScoreFromUser($"{student.FirstName} adlı öğrencinin {lesson.Name} dersinin bütünleme notu: ");
+                        studentLesson.MakeUpScore = GetScoreFromUser($"{student.FullName} adlı öğrencinin {lesson.Name} dersinin bütünleme notu: ");
 
                     student.Lessons.Add(studentLesson);
                 }
@@ -60,7 +60,7 @@ namespace OgrenciOrtalamasi
         {
             foreach (Student student in students)
             {
-                Console.WriteLine($"{student.FirstName} {student.LastName} adli ogrencinin GNO'su: {(float)student.GNO / 25}");
+                Console.WriteLine($"{student.FullName} adli ogrencinin GNO'su: {(float)student.GNO / 25}");
 
                 foreach (Lesson lesson in student.Lessons)
                 {
@@ -72,7 +72,7 @@ namespace OgrenciOrtalamasi
 
             Student bestStudent = GetBestStudent(students);
 
-            Console.WriteLine($"Ortalamasi en iyi olan ogrenci: {bestStudent.FirstName} {bestStudent.LastName}");
+            Console.WriteLine($"Ortalamasi en iyi olan ogrenci: {bestStudent.FullName}");
         }
 
         private static Student GetBestStudent(List<Student> students)

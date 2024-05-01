@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OgrenciOrtalamasi
-build_property.ProjectDir = C:\Users\gerib\Documents\Visual Studio 2022\C# Projects\Console\OgrenciOrtalamasiApp\OgrenciOrtalamasi\
+build_property.ProjectDir = C:\Users\gerib\Source\Repos\gnocalculator\OgrenciOrtalamasiApp\OgrenciOrtalamasi\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
